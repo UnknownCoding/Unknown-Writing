@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Writing Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <nav class="navbar">
+      <h1 class="logo">🌿 My Writing Haven</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Worlds</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <h2>Welcome to My Writing Haven</h2>
+      <p>Explore worlds, read stories, and follow my creative journey.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>About This Site</h2>
+      <p>
+        This is a place where I share my writing projects — from vast worldbuilding archives 
+        to short stories and reflections. Some worlds are sprawling and ancient, while others are 
+        just beginning to take shape. I also post blog updates here to share progress, ideas, 
+        and thoughts on storytelling.
+      </p>
+    </section>
+
+    <section class="featured">
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🌲 The Realm of Verdantia</h3>
+          <p>An ancient land where nature’s will shapes kingdoms and empires rise beneath the roots of colossal trees.</p>
+          <a href="#">Explore →</a>
+        </div>
+        <div class="card">
+          <h3>🔥 The Ashlands Chronicle</h3>
+          <p>A world scarred by flame and reborn from soot — tales of survival, ruin, and rebirth in a dying age.</p>
+          <a href="#">Read More →</a>
+        </div>
+        <div class="card">
+          <h3>🌊 The Tides of Lunaris</h3>
+          <p>A world adrift on endless seas, where islands carry forgotten myths and the moon commands the waves.</p>
+          <a href="#">Dive In →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-preview">
+      <h2>Latest Blog Posts</h2>
+      <div class="blog-list">
+        <article>
+          <h3><a href="#">Welcome to My New Site!</a></h3>
+          <p>Posted October 7, 2025 — A short introduction to my writing projects and what’s to come.</p>
+        </article>
+        <article>
+          <h3><a href="#">Planning the Next Worldbuilding Project</a></h3>
+          <p>How I approach building worlds from scratch, from concept to first story draft.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Writing Haven | Created with 🌿 nature and imagination</p>
+  </footer>
+
+  <script>
+    // Small example: Fade-in animation when scrolling
+    const cards = document.querySelectorAll('.card');
+    window.addEventListener('scroll', () => {
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          card.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
